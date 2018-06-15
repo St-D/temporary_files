@@ -1,0 +1,155 @@
+table { border-spacing: 2px; }
+td { padding: 4px; }
+tr:hover {
+    background: #f0f0f0; /* Меняем цвет фона строки таблицы */
+}
+
+#box{
+    display: block;
+    height: 100px;
+    width: 400px;
+
+    padding: 10px;
+    border: 10px solid #E81E25;
+    margin: 30px;
+    background: darkkhaki;
+    text-align: center;
+
+
+    box-sizing: content-box; /*для содержимого*/
+    box-sizing: border-box; /*для бокса кромме margin*/
+
+}
+
+#fl{
+    /*float: right;*/
+    /*display: inline*/
+}
+
+#tbl{
+    position: static;
+    top: 50px;
+    /*margin: 40px;*/
+}
+
+
+
+li:nth-child(2) {
+    background: violet;
+}
+
+
+
+li:nth-of-type(3) {
+    background: black;
+}
+
+
+/* Центрирование по горизонтали с flex */
+
+/*.parent{*/
+    /*height: 100px;*/
+    /*width: 500px;*/
+    /*border: solid black 5px;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+/*}*/
+
+/*.child{*/
+    /*height: 20px;*/
+    /*width: 200px;*/
+    /*background: black;*/
+
+/*}*/
+/* ----------------------------------- */
+
+/* Центрирование по горизонтали без flex */
+
+/*.parent{*/
+    /*height: 100px;*/
+    /*width: 500px;*/
+    /*border: solid black 5px;*/
+/*}*/
+
+/*.child{*/
+    /*height: 20px;*/
+    /*width: 200px;*/
+    /*background: black;*/
+    /*margin: auto; !* достаточно *!*/
+
+/*}*/
+/* ------------------------------------- */
+
+/* Центрирование по вертикали с flex */
+
+.parent{
+    height: 500px;
+    width: 500px;
+    border: solid black 5px;
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.child{
+    height: 50px;
+    width: 400px;
+    background: black;
+}
+/* ------------------------------------- */
+
+/* Центрирование по вертикали без flex */
+
+/*.parent{*/
+    /*height: 500px;*/
+    /*width: 500px;*/
+    /*border: solid black 5px;*/
+    /*position: relative;*/
+/*}*/
+
+/*.child{*/
+    /*height: 50px;*/
+    /*width: 400px;*/
+    /*background: black;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+
+/*}*/
+/* ------------------------------------- */
+
+#pos{
+    height: 200px;
+    width: 500px;
+    border: solid dimgrey;
+    background: ivory;
+
+    /*position: relative;*/
+
+    /*position: sticky;*/
+    /*top: 0;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#child_pos{
+    height: 50px;
+    width: 200px;
+
+    background: palegoldenrod;
+    border: solid dimgrey;
+
+    /*position: absolute;*/
+    /*left: 10%;*/
+
+
+
+
+}
+
